@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BlinTrack — Operacional</title>
+<title>☢ BlinTrack TESTE — Operacional</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
-:root{--black:#111111;--gold:#F5B800;--gold-dark:#B88A00;--bg:#F7F6F2;--surface:#fff;--border:#E8E6DF;--text:#111111;--text-muted:#888880;--text-light:#BBBBB0;--radius:10px;--radius-sm:6px;--c-previsto:#1A5FC8;--c-previsto-bg:#EBF0FB;--c-andamento:#0F6E56;--c-andamento-bg:#E1F5EE;--c-atrasado:#A32D2D;--c-atrasado-bg:#FCEBEB;--c-concluido:#3B6D11;--c-concluido-bg:#EAF3DE;--c-pendente:#B86A00;--c-pendente-bg:#FEF3E0;}
+:root{--black:#111111;--gold:#E8650A;--gold-dark:#B84D00;--bg:#F7F6F2;--surface:#fff;--border:#E8E6DF;--text:#111111;--text-muted:#888880;--text-light:#BBBBB0;--radius:10px;--radius-sm:6px;--c-previsto:#1A5FC8;--c-previsto-bg:#EBF0FB;--c-andamento:#0F6E56;--c-andamento-bg:#E1F5EE;--c-atrasado:#A32D2D;--c-atrasado-bg:#FCEBEB;--c-concluido:#3B6D11;--c-concluido-bg:#EAF3DE;--c-pendente:#B86A00;--c-pendente-bg:#FEF3E0;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;font-size:14px;}
 header{background:var(--black);padding:0 2rem;height:56px;display:flex;align-items:center;justify-content:space-between;}
@@ -240,7 +240,7 @@ input[type=text]:focus,input[type=date]:focus,input[type=number]:focus,select.fi
 .orc-autocomplete-wrap{position:relative;width:100%;}
 .orc-ac-list{position:absolute;top:100%;left:0;right:0;background:#fff;border:1px solid #ccc;border-top:none;max-height:180px;overflow-y:auto;z-index:9999;font-size:11px;font-family:Arial,sans-serif;}
 .orc-ac-item{padding:4px 8px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.orc-ac-item:hover,.orc-ac-item.selected{background:#F5B800;color:#000;}
+.orc-ac-item:hover,.orc-ac-item.selected{background:#E8650A;color:#000;}
 
 #login-overlay{position:fixed;inset:0;background:#111;display:flex;align-items:center;justify-content:center;z-index:9999;}
 .login-box{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:16px;padding:2.5rem 2rem;width:100%;max-width:360px;box-shadow:0 24px 60px rgba(0,0,0,.5);}
@@ -251,19 +251,19 @@ input[type=text]:focus,input[type=date]:focus,input[type=number]:focus,select.fi
 .login-field{margin-bottom:14px;}
 .login-field label{display:block;font-size:11px;font-weight:500;color:#666;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;}
 .login-field input{width:100%;height:42px;background:#111;border:1px solid #333;border-radius:8px;padding:0 14px;font-size:14px;font-family:"DM Sans",sans-serif;color:#fff;outline:none;transition:border-color .15s;box-sizing:border-box;}
-.login-field input:focus{border-color:#F5B800;}
-.login-btn{width:100%;height:42px;background:#F5B800;color:#111;border:none;border-radius:8px;font-size:14px;font-family:"DM Sans",sans-serif;font-weight:600;cursor:pointer;margin-top:6px;transition:opacity .15s;}
+.login-field input:focus{border-color:#E8650A;}
+.login-btn{width:100%;height:42px;background:#E8650A;color:#111;border:none;border-radius:8px;font-size:14px;font-family:"DM Sans",sans-serif;font-weight:600;cursor:pointer;margin-top:6px;transition:opacity .15s;}
 .login-btn:hover{opacity:.88;}
 .login-btn:disabled{opacity:.4;cursor:not-allowed;}
 .login-error{font-size:12px;color:#e74c3c;text-align:center;margin-top:10px;min-height:18px;}
 .login-forgot{font-size:12px;color:#555;text-align:center;margin-top:14px;}
 .login-forgot a{color:#888;cursor:pointer;text-decoration:underline;}
-.login-forgot a:hover{color:#F5B800;}
+.login-forgot a:hover{color:#E8650A;}
 .login-user-badge{position:fixed;bottom:12px;left:16px;font-size:11px;font-family:"DM Mono",monospace;color:#444;z-index:100;}
 
 
 
-/* SURVEY */
+/* ── SURVEY ── */
 #survey-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;z-index:3000;padding:1rem;}
 .survey-box{background:#1a1a1a;border-radius:14px;padding:2rem;width:100%;max-width:460px;border:1px solid #2a2a2a;box-shadow:0 24px 60px rgba(0,0,0,.4);}
 .survey-box h3{font-size:16px;font-weight:700;color:#fff;text-align:center;margin-bottom:4px;}
@@ -272,13 +272,22 @@ input[type=text]:focus,input[type=date]:focus,input[type=number]:focus,select.fi
 .survey-q label{font-size:13px;font-weight:500;color:#ccc;display:block;margin-bottom:8px;}
 .s-stars{display:flex;gap:6px;}
 .s-star{width:36px;height:36px;border-radius:8px;border:1.5px solid #333;background:none;font-size:17px;cursor:pointer;transition:all .12s;display:flex;align-items:center;justify-content:center;}
-.s-star:hover,.s-star.on{background:#F5B800;border-color:#F5B800;}
+.s-star:hover,.s-star.on{background:#E8650A;border-color:#E8650A;}
 .survey-obs{width:100%;border:1px solid #333;border-radius:8px;padding:10px;font-size:13px;font-family:'DM Sans',sans-serif;background:#111;color:#fff;outline:none;resize:vertical;min-height:72px;margin-top:4px;box-sizing:border-box;}
-.survey-obs:focus{border-color:#F5B800;}
+.survey-obs:focus{border-color:#E8650A;}
 .survey-btns{display:flex;gap:8px;justify-content:flex-end;margin-top:1.25rem;}
 .survey-later{padding:7px 14px;border:1px solid #333;border-radius:7px;background:none;font-size:12px;font-family:'DM Sans',sans-serif;color:#666;cursor:pointer;}
-.survey-send{padding:7px 18px;background:#F5B800;color:#111;border:none;border-radius:7px;font-size:13px;font-family:'DM Sans',sans-serif;font-weight:700;cursor:pointer;}
+.survey-send{padding:7px 18px;background:#E8650A;color:#111;border:none;border-radius:7px;font-size:13px;font-family:'DM Sans',sans-serif;font-weight:700;cursor:pointer;}
 .survey-send:disabled{opacity:.35;cursor:not-allowed;}
+/* Tela de obrigado */
+.survey-thanks{display:none;text-align:center;padding:.5rem 0;}
+.survey-thanks .ty-icon{font-size:40px;margin-bottom:12px;}
+.survey-thanks h3{font-size:16px;font-weight:700;color:#fff;margin-bottom:6px;}
+.survey-thanks p{font-size:12px;color:#666;margin-bottom:16px;}
+.survey-thanks button{padding:7px 18px;background:none;border:1px solid #333;border-radius:7px;font-size:12px;font-family:'DM Sans',sans-serif;color:#666;cursor:pointer;}
+.survey-progress{height:3px;background:#333;border-radius:2px;margin-top:12px;overflow:hidden;}
+.survey-progress-bar{height:3px;background:#E8650A;border-radius:2px;width:0%;transition:width linear;}
+
 </style>
 </head>
 <body>
@@ -305,10 +314,13 @@ input[type=text]:focus,input[type=date]:focus,input[type=number]:focus,select.fi
 </div>
 <div class="login-user-badge" id="login-user-badge" style="display:none"></div>
 
+<div style="width:100%;background:#E8650A;color:#fff;text-align:center;padding:7px 0;font-size:13px;font-family:'DM Sans',sans-serif;font-weight:700;letter-spacing:1px;position:fixed;top:0;left:0;z-index:10000;">
+  ☢ AMBIENTE DE TESTE — alterações aqui NÃO afetam a produção ☢
+</div>
 <header>
   <div class="logo">BlinTrack <span style="color:#444;margin:0 8px">|</span> Operacional</div>
   <div class="status-bar">
-    <button onclick="forceRefresh()" title="Recarregar sistema" style="height:26px;padding:0 10px;border:1px solid #333;border-radius:5px;background:none;color:#888;font-size:11px;font-family:'DM Sans',sans-serif;cursor:pointer;margin-right:8px;transition:all .15s;" onmouseover="this.style.borderColor='#F5B800';this.style.color='#F5B800'" onmouseout="this.style.borderColor='#333';this.style.color='#888'">↻ Refresh</button>
+    <button onclick="forceRefresh()" title="Recarregar sistema" style="height:26px;padding:0 10px;border:1px solid #333;border-radius:5px;background:none;color:#888;font-size:11px;font-family:'DM Sans',sans-serif;cursor:pointer;margin-right:8px;transition:all .15s;" onmouseover="this.style.borderColor='#E8650A';this.style.color='#E8650A'" onmouseout="this.style.borderColor='#333';this.style.color='#888'">↻ Refresh</button>
     <div class="status-dot loading" id="status-dot"></div>
     <span id="status-txt">Conectando...</span>
   </div>
@@ -667,7 +679,8 @@ input[type=text]:focus,input[type=date]:focus,input[type=number]:focus,select.fi
 <script>
 
 // ===================== LOGIN =====================
-const LOGIN_API = 'https://script.google.com/macros/s/AKfycbwoEs-AW-7zJgxVimJkVWi0PUqBEsFfgSmd7h6l_oIElP8UfFYfBGSaen1R0znHLxKg/exec';
+const API_TOKEN='TESTE#BlinTrack2026!xK9mP@qZ7nW3vR5';
+const LOGIN_API = 'https://script.google.com/macros/s/AKfycbxQZm7aEnqtsLjqGwhANegpSRIYlq23OZ4dNTlRLXaDvdw9nDvUt_SFA9sR2uW53RsQ/exec';
 const PERFIS_OPERACIONAL = ['admin','operacional'];
 let usuarioLogado = null;
 
@@ -698,7 +711,7 @@ async function fazerLogin(){
   errEl.textContent='';
   btn.disabled=true;btn.textContent='Verificando...';
   try{
-    const r = await fetch(LOGIN_API+'?token='+API_TOKEN+'&action=login&usuario='+encodeURIComponent(usuario)+'&senha='+encodeURIComponent(senha));
+    const r = await fetch(LOGIN_API+'?action=login&usuario='+encodeURIComponent(usuario)+'&senha='+encodeURIComponent(senha));
     const d = await r.json();
     if(d.ok && PERFIS_OPERACIONAL.includes(d.perfil)){
       usuarioLogado = d;
@@ -730,8 +743,7 @@ async function esqueceuSenha(){
 
 document.addEventListener('DOMContentLoaded', iniciarApp);
 
-const API_TOKEN='3gBU&KVkzf%c52-*F3N6tucGAf2&3ixpJTjE+g0uq4Z0!OL5wa8*5Hk04C5Lr%r9';
-const API='https://script.google.com/macros/s/AKfycbwoEs-AW-7zJgxVimJkVWi0PUqBEsFfgSmd7h6l_oIElP8UfFYfBGSaen1R0znHLxKg/exec';
+const API='https://script.google.com/macros/s/AKfycbxQZm7aEnqtsLjqGwhANegpSRIYlq23OZ4dNTlRLXaDvdw9nDvUt_SFA9sR2uW53RsQ/exec';
 const MONTHS=['Janeiro','Fevereiro','Marco','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
 const MONTHS_SHORT=['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
 const DAYS_SHORT=['Dom','Seg','Ter','Qua','Qui','Sex','Sab'];
@@ -779,22 +791,24 @@ function switchMainTab(t){
 
 // ===================== AGENDA =====================
 async function apiGet(tentativa=1){
-  setStatus('loading', tentativa===1?'Sincronizando...':'Reconectando... (tentativa '+tentativa+')');
+  if(tentativa===1) setStatus('loading','Sincronizando...');
   try{
     const ctrl=new AbortController();
-    const timer=setTimeout(()=>ctrl.abort(),20000);
-    const r=await fetch(API+'?token='+API_TOKEN+'&action=getAll',{signal:ctrl.signal});
+    const timer=setTimeout(()=>ctrl.abort(),25000);
+    const r=await fetch(API+'?token='+encodeURIComponent(API_TOKEN)+'&action=getAll',{signal:ctrl.signal});
     clearTimeout(timer);
     const d=await r.json();
+    if(d && d.error){throw new Error(d.error);}
     events=Array.isArray(d)?d.filter(e=>e.id&&e.client&&e.date&&e.status).map(e=>({...e,date:String(e.date).slice(0,10)})):[];
     setStatus('online','Sincronizado - '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'}));
     renderAgenda();
   }catch(e){
-    if(tentativa<3){
+    if(tentativa<4){
       setStatus('loading','Aguardando AppScript... ('+tentativa+'/3)');
-      setTimeout(()=>apiGet(tentativa+1), 5000);
+      setTimeout(()=>apiGet(tentativa+1), 8000);
     } else {
-      setStatus('error','Erro de conexão — F5 para tentar novamente');
+      setStatus('error','Erro de conexão');
+      setTimeout(()=>apiGet(1), 30000); // tenta novamente após 30s
     }
   }
 }
@@ -899,7 +913,7 @@ async function loadPipeline(forceRender){
   document.getElementById('pipeline-sync').textContent='Carregando...';
   try{
     const ctrl2=new AbortController();setTimeout(()=>ctrl2.abort(),10000);
-    const r=await fetch(API+'?token='+API_TOKEN+'&action=getPipeline',{signal:ctrl2.signal});
+    const r=await fetch(API+'?token='+encodeURIComponent(API_TOKEN)+'&action=getPipeline',{signal:ctrl2.signal});
     const d=await r.json();
     projects=Array.isArray(d)?d.map(p=>({...p,uhs:parseInt(p.uhs)||0,steps:Array.isArray(p.steps)?p.steps:STEPS.map(s=>({id:s.id,done:false,date:''}))})):[];
     document.getElementById('pipeline-sync').textContent='Sincronizado - '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
@@ -907,12 +921,14 @@ async function loadPipeline(forceRender){
     if(!algumAberto||forceRender)renderPipeline();
     else document.getElementById('pipeline-sync').textContent='Sincronizado (card aberto) - '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
   }catch(e){
-    if(!window._pipelineRetry){
-      window._pipelineRetry=true;
-      document.getElementById('pipeline-sync').textContent='Reconectando... aguarde';
-      setTimeout(()=>{window._pipelineRetry=false;sincronizarPipeline();},6000);
+    window._pipeRetries = (window._pipeRetries||0) + 1;
+    if(window._pipeRetries < 4){
+      document.getElementById('pipeline-sync').textContent='Reconectando... ('+window._pipeRetries+'/3)';
+      setTimeout(()=>sincronizarPipeline(), 8000);
     } else {
-      document.getElementById('pipeline-sync').textContent='Erro de conexão — clique em Sincronizar';
+      window._pipeRetries = 0;
+      document.getElementById('pipeline-sync').textContent='Erro ao carregar — clique em Sincronizar';
+      pipelineLoaded=false;
     }
   }
 }
@@ -1053,7 +1069,7 @@ function toggleProject(id){
 async function renderDashboard(){
   document.getElementById('dash-sync').textContent='Carregando...';
   if(!projects.length){
-    try{const r=await fetch(API+'?token='+API_TOKEN+'&action=getPipeline');const d=await r.json();projects=Array.isArray(d)?d.map(p=>({...p,uhs:parseInt(p.uhs)||0,steps:Array.isArray(p.steps)?p.steps:STEPS.map(s=>({id:s.id,done:false,date:''}))})):[];}catch(e){}
+    try{const r=await fetch(API+'?token='+encodeURIComponent(API_TOKEN)+'&action=getPipeline');const d=await r.json();projects=Array.isArray(d)?d.map(p=>({...p,uhs:parseInt(p.uhs)||0,steps:Array.isArray(p.steps)?p.steps:STEPS.map(s=>({id:s.id,done:false,date:''}))})):[];}catch(e){}
   }
   const total=projects.length;
   const concluidos=projects.filter(p=>p.steps.every(s=>s.done));
@@ -1137,7 +1153,7 @@ async function renderDashboard(){
 let prospects=[],comFilter='todos';
 async function loadComercial(){
   document.getElementById('com-sync').textContent='Carregando...';
-  try{const r=await fetch(API+'?token='+API_TOKEN+'&action=getComercial');const d=await r.json();prospects=Array.isArray(d)?d:[];document.getElementById('com-sync').textContent='Sincronizado - '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});renderComercial();}catch(e){document.getElementById('com-sync').textContent='Erro de conexão';}
+  try{const r=await fetch(API+'?token='+encodeURIComponent(API_TOKEN)+'&action=getComercial');const d=await r.json();prospects=Array.isArray(d)?d:[];document.getElementById('com-sync').textContent='Sincronizado - '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});renderComercial();}catch(e){document.getElementById('com-sync').textContent='Erro de conexão';}
 }
 function setComFilter(f){
   comFilter=f;
@@ -1237,7 +1253,19 @@ async function confirmarEnvioEmail(){const projId=document.getElementById('ec-pr
 // ===================== VISTORIA =====================
 const STEPS_VISTORIA=[{id:1,title:'Vistoria solicitada',resp:'SAC'},{id:2,title:'Agendamento com cliente',resp:'SAC'},{id:3,title:'Vistoria realizada',resp:'SAC'},{id:4,title:'Relatorio tecnico emitido',resp:'SAC'},{id:5,title:'Enviado ao comercial',resp:'SAC'}];
 let vistorias=[],vstSaveTimer=null;
-async function loadVistoria(){document.getElementById('vistoria-sync').textContent='Carregando...';try{const r=await fetch(API+'?token='+API_TOKEN+'&action=getVistoria');const d=await r.json();vistorias=Array.isArray(d)?d.map(v=>({...v,steps:Array.isArray(v.steps)?v.steps:STEPS_VISTORIA.map(s=>({id:s.id,done:false,date:''}))})):[];document.getElementById('vistoria-sync').textContent='Sincronizado - '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});renderVistoria();}catch(e){document.getElementById('vistoria-sync').textContent='Erro de conexão';}}
+async function loadVistoria(){
+  document.getElementById('vistoria-sync').textContent='Carregando...';
+  try{
+    const promises=[fetch(API+'?token='+encodeURIComponent(API_TOKEN)+'&action=getVistoria')];
+    if(!clientes.length) promises.push(fetch(API+'?token='+encodeURIComponent(API_TOKEN)+'&action=getClientes'));
+    const results=await Promise.all(promises);
+    const dVistoria=await results[0].json();
+    if(results[1]){const dClientes=await results[1].json();clientes=Array.isArray(dClientes)?dClientes:[];}
+    vistorias=Array.isArray(dVistoria)?dVistoria.map(v=>({...v,steps:(Array.isArray(v.steps)&&v.steps.length>0)?v.steps:STEPS_VISTORIA.map(s=>({id:s.id,done:false,date:''}))})):[];
+    document.getElementById('vistoria-sync').textContent='Sincronizado - '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
+    renderVistoria();
+  }catch(e){document.getElementById('vistoria-sync').textContent='Erro de conexão';}
+}
 async function saveVistoriaProject(v){try{await fetch(API,{method:'POST',body:JSON.stringify({token:API_TOKEN,action:'saveVistoria',id:v.id,prospectId:v.prospectId,nomeCliente:v.nomeCliente,status:v.status,steps:v.steps})});document.getElementById('vistoria-sync').textContent='Salvo - '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});}catch(e){document.getElementById('vistoria-sync').textContent='Erro ao salvar';}}
 function schedSaveVistoria(v){document.getElementById('vistoria-sync').textContent='Salvando...';clearTimeout(vstSaveTimer);vstSaveTimer=setTimeout(()=>saveVistoriaProject(v),1500);}
 function toggleVistoriaStep(vId,stepId){const v=vistorias.find(x=>x.id===vId);if(!v)return;const step=v.steps.find(s=>s.id===stepId);if(!step)return;step.done=!step.done;if(step.done&&!step.date)step.date=todayStr;if(v.steps.every(s=>s.done))v.status='concluida';else v.status='andamento';renderVistoria();schedSaveVistoria(v);}
@@ -1253,7 +1281,7 @@ const sh=STEPS_VISTORIA.map(s=>{const ps=v.steps.find(st=>st.id===s.id)||{done:f
 
 // ===================== CLIENTES =====================
 let clientes=[],cliSaveTimer=null;
-async function loadClientes(){const syncEl=document.getElementById('cli-sync');if(syncEl)syncEl.textContent='Carregando...';try{const r=await fetch(API+'?token='+API_TOKEN+'&action=getClientes');const d=await r.json();clientes=Array.isArray(d)?d:[];if(syncEl)syncEl.textContent='Sincronizado - '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});renderClientes();}catch(e){if(syncEl)syncEl.textContent='Erro de conexão';}}
+async function loadClientes(){const syncEl=document.getElementById('cli-sync');if(syncEl)syncEl.textContent='Carregando...';try{const r=await fetch(API+'?token='+encodeURIComponent(API_TOKEN)+'&action=getClientes');const d=await r.json();clientes=Array.isArray(d)?d:[];if(syncEl)syncEl.textContent='Sincronizado - '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});renderClientes();}catch(e){if(syncEl)syncEl.textContent='Erro de conexão';}}
 async function saveCliente(clienteId){const cli=clientes.find(c=>c.id===clienteId);if(!cli)return;const get=id=>{const el=document.getElementById(id);return el?el.value:'';};const getChk=id=>{const el=document.getElementById(id);return el?el.checked:false;};const gradeAnexada=getChk('cli-grade-'+clienteId);const gradePor=get('cli-grade-por-'+clienteId);const produto=(cli.produto||'').toUpperCase();const precisaGrade=produto.includes('HD')||produto.includes('SD');if(precisaGrade&&gradeAnexada&&!gradePor.trim()){alert('Informe quem anexou a grade.');return;}if(precisaGrade&&!gradeAnexada){if(!confirm('Grade nao marcada como anexada. Salvar mesmo assim?'))return;}const payload={action:'saveCliente',id:clienteId,nome:cli.nome,data_instalacao:get('cli-instalacao-'+clienteId),tecnico:get('cli-tecnico-'+clienteId),nf_envio:get('cli-nf-'+clienteId),os_instalacao:get('cli-os-'+clienteId),status:get('cli-status-'+clienteId),observacoes:get('cli-obs-'+clienteId),grade_anexada:gradeAnexada,grade_por:gradePor,link_contrato:get('cli-link-contrato-'+clienteId),link_projeto:get('cli-link-projeto-'+clienteId)};const btn=document.getElementById('cli-save-btn-'+clienteId);if(btn){btn.textContent='Salvando...';btn.disabled=true;}try{await fetch(API,{method:'POST',body:JSON.stringify({...payload,token:API_TOKEN})});await loadClientes();if(btn){btn.textContent='Salvo!';setTimeout(()=>{btn.textContent='Salvar';btn.disabled=false;},2000);}}catch(e){if(btn){btn.textContent='Erro';btn.disabled=false;}}}
 function toggleCliCard(id){const el=document.getElementById('cli-body-'+id);const chev=document.getElementById('cli-chev-'+id);if(!el)return;const open=el.style.display!=='none';el.style.display=open?'none':'block';chev.className='chevron'+(open?'':' open');}
 function formatDateBRCli(ds){if(!ds)return'';const s=String(ds).slice(0,10).split('-');if(s.length<3)return ds;return s[2]+'/'+s[1]+'/'+s[0];}
@@ -1410,7 +1438,7 @@ async function criarClienteAvulso(){const nome=document.getElementById('nc-nome'
 let cronogramas=[],cronSaveTimer=null;
 const BASE_URL='https://mfdourado.github.io/agenda-blincast/cronograma.html';
 const TEMPLATE_TASKS=[{id:1,nome:'Configuração dos equipamentos',responsavel:'Operacional',dataInicio:'',dataFim:'',status:'previsto'},{id:2,nome:'Instalação física — Rack',responsavel:'Operacional',dataInicio:'',dataFim:'',status:'previsto'},{id:3,nome:'Infraestrutura de rede',responsavel:'Operacional',dataInicio:'',dataFim:'',status:'previsto'},{id:4,nome:'Testes e validação',responsavel:'Operacional',dataInicio:'',dataFim:'',status:'previsto'}];
-async function loadCronogramas(){document.getElementById('cron-sync').textContent='Carregando...';try{const r=await fetch(API+'?token='+API_TOKEN+'&action=getCronogramas');const d=await r.json();cronogramas=Array.isArray(d)?d:[];document.getElementById('cron-sync').textContent='Sincronizado - '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});renderCronogramas();}catch(e){document.getElementById('cron-sync').textContent='Erro de conexão';}}
+async function loadCronogramas(){document.getElementById('cron-sync').textContent='Carregando...';try{const r=await fetch(API+'?token='+encodeURIComponent(API_TOKEN)+'&action=getCronogramas');const d=await r.json();cronogramas=Array.isArray(d)?d:[];document.getElementById('cron-sync').textContent='Sincronizado - '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});renderCronogramas();}catch(e){document.getElementById('cron-sync').textContent='Erro de conexão';}}
 function openNovoCronModal(){document.getElementById('cron-nome').value='';document.getElementById('cm-edit-id').value='';document.getElementById('cron-modal-title').textContent='Novo cronograma';renderModalTasks(JSON.parse(JSON.stringify(TEMPLATE_TASKS)));document.getElementById('cron-modal').style.display='flex';}
 function closeCronModal(){document.getElementById('cron-modal').style.display='none';}
 function renderModalTasks(tasks){const list=document.getElementById('cm-tasks-list');list.innerHTML=tasks.map((t,i)=>`<div style="display:grid;grid-template-columns:1fr 120px auto;gap:6px;align-items:center"><input type="text" value="${t.nome}" placeholder="Nome da tarefa" id="ct-nome-${i}" style="height:30px;border:1px solid var(--border);border-radius:4px;padding:0 8px;font-size:12px;font-family:'DM Sans',sans-serif;background:var(--surface);color:var(--text);outline:none;"><input type="text" value="${t.responsavel}" placeholder="Responsável" id="ct-resp-${i}" style="height:30px;border:1px solid var(--border);border-radius:4px;padding:0 8px;font-size:12px;font-family:'DM Sans',sans-serif;background:var(--surface);color:var(--text);outline:none;"><button onclick="removeCronTask(${i})" style="width:28px;height:28px;border:1px solid var(--border);border-radius:4px;background:none;cursor:pointer;color:var(--text-light);font-size:13px;">✕</button></div>`).join('');list.dataset.count=tasks.length;}
@@ -1436,7 +1464,7 @@ async function loadAta(){
   document.getElementById('ata-sync').textContent='Carregando...';
   // Sem filtro de data por padrão — mostra todos os não-feitos
   try{
-    const r=await fetch(API+'?token='+API_TOKEN+'&action=getAta');
+    const r=await fetch(API+'?token='+encodeURIComponent(API_TOKEN)+'&action=getAta');
     const d=await r.json();
     ataRegistros=Array.isArray(d)?d.filter(r=>r&&r.id&&String(r.id).trim()!='').map(r=>{
       const n={};
@@ -1790,6 +1818,14 @@ function sS(q,v){
 
 function sClose(adiar){
   document.getElementById('survey-overlay').style.display='none';
+  // Resetar para próxima vez
+  document.getElementById('survey-form').style.display='block';
+  document.getElementById('survey-thanks').style.display='none';
+  sR={1:0,2:0,3:0};
+  document.querySelectorAll('.s-star').forEach(b=>b.classList.remove('on'));
+  document.getElementById('sObs').value='';
+  document.getElementById('sBtnEnviar').disabled=true;
+  document.getElementById('sBtnEnviar').textContent='Enviar';
   if(!adiar) localStorage.setItem(S_KEY,Date.now().toString());
 }
 
@@ -1805,8 +1841,15 @@ async function sEnviar(){
       data:new Date().toLocaleDateString('pt-BR')
     })});
   }catch(e){}
-  sClose(false);
-  btn.textContent='Enviar';
+  // Mostrar tela de obrigado
+  document.getElementById('survey-form').style.display='none';
+  document.getElementById('survey-thanks').style.display='block';
+  localStorage.setItem(S_KEY,Date.now().toString());
+  // Barra de progresso 3 segundos depois fecha
+  const bar=document.getElementById('sTyBar');
+  bar.style.transition='width 3s linear';
+  setTimeout(()=>bar.style.width='100%',50);
+  setTimeout(()=>sClose(false),3200);
 }
 
 function sVerificar(){
@@ -2035,45 +2078,56 @@ function sVerificar(){
 <!-- PESQUISA DE SATISFAÇÃO -->
 <div id="survey-overlay" style="display:none">
   <div class="survey-box">
-    <h3>📋 Pesquisa de satisfação</h3>
-    <p>Leva menos de 1 minuto e nos ajuda a melhorar o sistema</p>
-    <div class="survey-q">
-      <label>1. Como você avalia o BlinTrack no geral?</label>
-      <div class="s-stars" id="ss1">
-        <button class="s-star" onclick="sS(1,1)">⭐</button>
-        <button class="s-star" onclick="sS(1,2)">⭐</button>
-        <button class="s-star" onclick="sS(1,3)">⭐</button>
-        <button class="s-star" onclick="sS(1,4)">⭐</button>
-        <button class="s-star" onclick="sS(1,5)">⭐</button>
+    <!-- Formulário -->
+    <div id="survey-form">
+      <h3>📋 Pesquisa de satisfação</h3>
+      <p>Leva menos de 1 minuto e nos ajuda a melhorar o sistema</p>
+      <div class="survey-q">
+        <label>1. Como você avalia o BlinTrack no geral?</label>
+        <div class="s-stars" id="ss1">
+          <button class="s-star" onclick="sS(1,1)">⭐</button>
+          <button class="s-star" onclick="sS(1,2)">⭐</button>
+          <button class="s-star" onclick="sS(1,3)">⭐</button>
+          <button class="s-star" onclick="sS(1,4)">⭐</button>
+          <button class="s-star" onclick="sS(1,5)">⭐</button>
+        </div>
+      </div>
+      <div class="survey-q">
+        <label>2. O sistema é fácil de usar no dia a dia?</label>
+        <div class="s-stars" id="ss2">
+          <button class="s-star" onclick="sS(2,1)">⭐</button>
+          <button class="s-star" onclick="sS(2,2)">⭐</button>
+          <button class="s-star" onclick="sS(2,3)">⭐</button>
+          <button class="s-star" onclick="sS(2,4)">⭐</button>
+          <button class="s-star" onclick="sS(2,5)">⭐</button>
+        </div>
+      </div>
+      <div class="survey-q">
+        <label>3. As funcionalidades atendem à sua operação?</label>
+        <div class="s-stars" id="ss3">
+          <button class="s-star" onclick="sS(3,1)">⭐</button>
+          <button class="s-star" onclick="sS(3,2)">⭐</button>
+          <button class="s-star" onclick="sS(3,3)">⭐</button>
+          <button class="s-star" onclick="sS(3,4)">⭐</button>
+          <button class="s-star" onclick="sS(3,5)">⭐</button>
+        </div>
+      </div>
+      <div class="survey-q">
+        <label>Comentários <span style="color:#555;font-weight:400">(opcional)</span></label>
+        <textarea class="survey-obs" id="sObs" placeholder="Sugestões de melhoria..."></textarea>
+      </div>
+      <div class="survey-btns">
+        <button class="survey-later" onclick="sClose(true)">Responder depois</button>
+        <button class="survey-send" id="sBtnEnviar" onclick="sEnviar()" disabled>Enviar</button>
       </div>
     </div>
-    <div class="survey-q">
-      <label>2. O sistema é fácil de usar no dia a dia?</label>
-      <div class="s-stars" id="ss2">
-        <button class="s-star" onclick="sS(2,1)">⭐</button>
-        <button class="s-star" onclick="sS(2,2)">⭐</button>
-        <button class="s-star" onclick="sS(2,3)">⭐</button>
-        <button class="s-star" onclick="sS(2,4)">⭐</button>
-        <button class="s-star" onclick="sS(2,5)">⭐</button>
-      </div>
-    </div>
-    <div class="survey-q">
-      <label>3. As funcionalidades atendem à sua operação?</label>
-      <div class="s-stars" id="ss3">
-        <button class="s-star" onclick="sS(3,1)">⭐</button>
-        <button class="s-star" onclick="sS(3,2)">⭐</button>
-        <button class="s-star" onclick="sS(3,3)">⭐</button>
-        <button class="s-star" onclick="sS(3,4)">⭐</button>
-        <button class="s-star" onclick="sS(3,5)">⭐</button>
-      </div>
-    </div>
-    <div class="survey-q">
-      <label>Comentários <span style="color:#555;font-weight:400">(opcional)</span></label>
-      <textarea class="survey-obs" id="sObs" placeholder="Sugestões de melhoria..."></textarea>
-    </div>
-    <div class="survey-btns">
-      <button class="survey-later" onclick="sClose(true)">Responder depois</button>
-      <button class="survey-send" id="sBtnEnviar" onclick="sEnviar()" disabled>Enviar</button>
+    <!-- Tela de obrigado -->
+    <div class="survey-thanks" id="survey-thanks">
+      <div class="ty-icon">🎉</div>
+      <h3>Obrigado pelo feedback!</h3>
+      <p>Sua resposta foi registrada e vai nos ajudar a melhorar o BlinTrack.</p>
+      <button onclick="sClose(false)">Fechar</button>
+      <div class="survey-progress"><div class="survey-progress-bar" id="sTyBar"></div></div>
     </div>
   </div>
 </div>
