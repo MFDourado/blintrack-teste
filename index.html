@@ -159,8 +159,8 @@
 
     <section class="card" data-card="sky">
       <button class="hide-btn" title="Ocultar">&times;</button>
-      <h2>Gestão Sky · vencimentos</h2>
-      <div class="big"><span id="sky-venc">0</span><span class="u">na janela</span></div>
+      <h2>Gestão Sky</h2>
+      <div class="big"><span id="sky-total">0</span><span class="u">contratos</span></div>
       <div class="list" id="sky-list"></div>
     </section>
 
@@ -271,12 +271,15 @@
     }).join('');
 
     // Sky
-    num('sky-venc', sky.vencendo);
+    num('sky-total', sky.total);
     var prox=sky.proximos||[];
-    $('sky-list').innerHTML=prox.slice(0,6).map(function(p){
-      var cls=p.dias<=2?'crit':(p.dias<=4?'warn':'');
-      return '<div class="li"><span class="nm">'+esc(p.cliente||'-')+'</span><span class="pill '+cls+'">'+p.dias+'d · '+esc(p.vencimento)+'</span></div>';
-    }).join('')||'<div class="li"><span class="nm" style="color:var(--muted)">Sem vencimentos na janela</span></div>';
+    $('sky-list').innerHTML='<div class="nh">Próximos a vencer</div>' + (prox.length
+      ? prox.slice(0,6).map(function(p){
+          var cls=p.dias<=7?'crit':(p.dias<=15?'warn':'');
+          var d=p.dias<0?'vencido':p.dias+'d';
+          return '<div class="li"><span class="nm">'+esc(p.cliente||'-')+'</span><span class="pill '+cls+'">'+d+' · '+esc(p.vencimento)+'</span></div>';
+        }).join('')
+      : '<div class="li"><span class="nm" style="color:var(--muted)">Sem vencimentos próximos</span></div>');
 
     // Jamef
     num('jam-env', jam.envios); num('jam-entr', jam.entregues); num('jam-cte', jam.com_cte);
@@ -294,7 +297,12 @@
       montagens:{em_andamento:1,concluidas:7,total:8},
       andamento:[{nome:'EIXO MONUMENTAL', localidade:'Brasília DF', tecnico:'Ângelo', equipamento:'Rack HD', data:'25/06/2026', status:'Em andamento'}],
       contratos:{ativos:312,distratos:0,aditivos:0,por_uf:{RJ:116,SP:55,MG:32,GO:18,ES:12}},
-      sky:{vencendo:0,proximos:[]}, jamef:{envios:41,entregues:34,com_cte:4}, avisos:[]};
+      sky:{total:12,vencendo7:2,vencendo15:4,proximos:[
+        {cliente:'Hotel Marina',dias:3,vencimento:'29/06'},
+        {cliente:'Pousada Verde',dias:6,vencimento:'02/07'},
+        {cliente:'Resort Sol',dias:11,vencimento:'07/07'},
+        {cliente:'Hotel Central',dias:14,vencimento:'10/07'}
+      ]}, jamef:{envios:41,entregues:34,com_cte:4}, avisos:[]};
   }
 
   function atualizar(){
